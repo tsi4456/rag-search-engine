@@ -187,7 +187,5 @@ def rrf_search_command(
         print(f"   {r['document'][:100]}...")
 
     if evaluate:
-        print("/3")
-        print("The Berenstain Bears' Christmas Tree")
-        # for i, r in enumerate(evaluate_results(query, results), 1):
-        #     print(f"{i}. {r['title']}: {r['eval']}/3")
+        for i, r in enumerate(evaluate_results(query, results), 1):
+            print(f"{i}. {r['title']}: {r['eval']}/3")

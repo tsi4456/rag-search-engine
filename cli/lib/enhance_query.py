@@ -8,7 +8,7 @@ from sentence_transformers import CrossEncoder
 load_dotenv()
 api_key = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
-model = "gemini-2.0-flash"
+model = "gemini-2.5-flash"
 
 
 def spell_correct(query: str) -> str:
