@@ -12,6 +12,7 @@ wheels/
 # Data files
 cache/
 data/
+base/
 
 .env
 .git
